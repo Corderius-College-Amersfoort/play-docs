@@ -24,7 +24,10 @@ Hoe kan ik de cirkel veranderen **nadat** deze gemaakt is?
 Oftewel, kan ik via code na **play.new_circle()** iets veranderen aan de cirkel?
 
 ## 1.5.1 De variabele
-We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar eens goed naar het onderstaande voorbeeld:
+We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Een variabele is een soort naamkaartje dat je aan iets kunt geven in je programma, zodat je het later makkelijk kunt terugvinden en aanpassen.
+In ons geval willen we de cirkel later nog veranderen (bijvoorbeeld de kleur of positie), dus geven we hem een naam: `cirkel`.
+
+Kijk maar eens goed naar het onderstaande voorbeeld:
 
 
 ```python
@@ -41,13 +44,13 @@ In dit codefragment gebeurt erg veel:
 - **cirkel = play.new_circle()**: dit tekent de cirkel EN zorgt ervoor dat de variabele **cirkel** verwijst naar onze cirkel
 - **cirkel.color = 'blue'**: dit wijzigt van onze cirkel alleen de kleur naar blauw
 
-Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
+Naast kleur kun je ook de x-coördinaat, y-coördinaat etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 
 ### Opdracht 1.5.1: je aangepaste cirkel
 Maak een nieuwe cirkel en pas deze aan:
-- Verander de kleur naar 'blue' 
-- Verander de x-positie naar 150 
-- Verander de y-positie naar 200 
+- Verander de kleur naar 'green' 
+- Verander de x-coördinaat naar 150 
+- Verander de y-coördinaat naar 250 
 - Vergroot de cirkel door de 'radius' (straal) aan te passen naar 200
 
 ```python
@@ -73,9 +76,9 @@ De attributen die je gaat veranderen zijn: **color**, **x**, **y** en **radius**
 import play 
 
 cirkel = play.new_circle()
-cirkel.color = 'blue'
+cirkel.color = 'green'
 cirkel.x = 150
-cirkel.y = 200
+cirkel.y = 250
 cirkel.radius = 200
 
 play.start_program()
