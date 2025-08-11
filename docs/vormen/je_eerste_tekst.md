@@ -9,8 +9,8 @@ We missen nog één ding: een tekst. Het is toch wel fijn als onze tekeningen en
 Uiteraard is het systeem hetzelfde als bij **play.new_circle** en **play.new_box**.
 Je kunt voor **play.new_text** kiezen uit:
 - **words**: de woorden die op het scherm komen te staan
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **x**: x-positie. Staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie. Staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
 - **font**: de font van de tekst. Kun je bijvoorbeeld aanpassen naar 'arial'.
 - **font_size**: de grootte van de font.
 - **color**: de kleur van de tekst.
