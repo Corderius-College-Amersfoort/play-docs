@@ -45,7 +45,7 @@ Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar 
 
 ### Opdracht 1.5.1: je aangepaste cirkel
 Maak een nieuwe cirkel en pas deze aan:
-- Verander de kleur naar 'blue' 
+- Verander de kleur naar 'green' 
 - Verander de x-positie naar 150 
 - Verander de y-positie naar 200 
 - Vergroot de cirkel door de 'radius' (straal) aan te passen naar 200
@@ -73,7 +73,7 @@ De attributen die je gaat veranderen zijn: **color**, **x**, **y** en **radius**
 import play 
 
 cirkel = play.new_circle()
-cirkel.color = 'blue'
+cirkel.color = 'green'
 cirkel.x = 150
 cirkel.y = 200
 cirkel.radius = 200
