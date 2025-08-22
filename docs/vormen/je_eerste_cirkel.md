@@ -41,7 +41,7 @@ play.start_program()
 Ben je benieuwd uit welke kleuren je allemaal kan kiezen? Op [deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je alle opties.
 
 ### Opdracht 1.2.1 De kleur aanpassen
-a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny of Visual Studio Code) en pas het aan. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. 
+a) Schrijf een programma waarbij de kleur van de cirkel rood is. Kopieer het voorbeeld hieronder naar je editor (bijvoorbeeld Thonny of Visual Studio Code) en pas de kleur aan. Wanneer je tevreden bent met je code, kun je het gaan uitvoeren. 
 
 ```python 
 import play
@@ -70,8 +70,7 @@ play.start_program()
 </details>
 
 
-b) pas het programma aan met een kleur die je gekozen hebt uit de lijst van alle opties
-
+b) pas het programma aan met een kleur die je gekozen hebt uit de lijst van [alle kleuren](https://www.pygame.org/docs/ref/color_list.html).
 
 ```python 
 import play
@@ -218,13 +217,13 @@ De bal zou een klein stukje onder het midden moeten staan.
 
 ## 1.2.3 Wat kan ik aanpassen aan een cirkel?
 Hierbij de lijst van attributen voor een cirkel:
-- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
-- **radius**: staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
-- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **color**: Kleur, staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleuropties er zijn.
+- **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
+- **radius**: straal, staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
+- **border_color**: kleur van de rand, staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
 - **border_width**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
-- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+- **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
 
 ### Opdracht 1.2.3 De mooiste cirkel
 

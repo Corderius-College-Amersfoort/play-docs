@@ -19,13 +19,13 @@ play.start_program()
 
 Wat kan ik aanpassen aan een cirkel?
 Hierbij de lijst van attributen voor een cirkel:
-- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
-- **radius**: staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
-- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **color**: Kleur, staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleuropties er zijn.
+- **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
+- **radius**: straal, staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
+- **border_color**: kleur van de rand, staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
 - **border_width**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
-- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+- **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
 
 Voorbeeld van een kleine blauwe cirkel die een beetje naar rechts staat:
 
@@ -51,14 +51,14 @@ play.start_program()
 
 Net zoals bij **play.new_circle** heeft het programma voor ons nu ook al de kleur en grootte bepaald. Je kunt dit zelf natuurlijk aanpassen!
 Dit zijn de attributen voor **play.new_box**:
-- **color**: staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke opties er zijn.
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **color**: Kleur, staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleuropties er zijn.
+- **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
 - **width**: de breedte van de rechthoek.
 - **height**: de hoogte van de rechthoek.
-- **border_color**: staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
+- **border_color**: kleur van de rand, staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
 - **border_radius**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
-- **transparency**: 0 --> onzichtbaar. 100 --> volledig zichtbaar.
+- **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
 
 Voorbeeld van een rode rechthoek die een beetje boven het midden staat:
 ```python
@@ -82,9 +82,9 @@ play.start_program()
 ```
 
 Je kunt voor **play.new_text** kiezen uit:
-- **words**: de woorden die op het scherm komen te staan
-- **x**: staat standaard op 0 (het midden). Lager dan 0 is naar links, boven 0 is naar rechts.
-- **y**: staat standaard op 0 (het midden), Lager dan 0 is naar beneden, boven 0 is naar boven.
+- **words**: Woorden op het scherm, de woorden die op het scherm komen te staan
+- **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
 - **font**: de font van de tekst. Kun je bijvoorbeeld aanpassen naar 'arial'.
 - **font_size**: de grootte van de font.
 - **color**: de kleur van de tekst.
@@ -746,6 +746,98 @@ play.start_program()
 ```
 
 </details>
+
+## Screen
+
+<details>
+  <summary>Hoe weet ik hoeveel pixels breed het scherm is? (play.screen.width)?</summary>
+
+  Met **play.screen.width** kun je weten hoeveel pixels breed het scherm is.
+
+  ```python
+  import play 
+
+  print(play.screen.width)
+
+  play.start_program()
+  ```
+</details>
+
+<details>
+  <summary>Hoe weet ik hoeveel pixels hoog het scherm is? (play.screen.height)?</summary>
+
+  Met **play.screen.height** kun je weten hoeveel pixels hoog het scherm is.
+
+  ```python
+  import play 
+
+  print(play.screen.height)
+
+  play.start_program()
+  ```
+</details>
+
+<details>
+  <summary>Hoe weet ik wat de x-positie is van de linkerkant van het scherm (play.screen.left)?</summary>
+
+  Met **play.screen.left** kun je weten wat de x-positie is van de linkerkant van het scherm.
+  Standaard staat dit op **-400**. Het midden van het scherm heeft een x-positie van 0. Naar links wordt de x-positie dus negatief
+
+  ```python
+  import play 
+
+  print(play.screen.left)
+
+  play.start_program()
+ ```
+</details>
+
+<details>
+  <summary>Hoe weet ik wat de x-positie is van de rechterkant van het scherm (play.screen.right)?</summary>
+
+  Met **play.screen.right** kun je weten wat de x-positie is van de rechterkant van het scherm.
+  Standaard staat dit op **400**. Het midden van het scherm heeft een x-positie van 0. Naar rechts wordt de x-positie dus hoger.
+
+  ```python
+  import play 
+
+  print(play.screen.right)
+
+  play.start_program()
+ ```
+</details>
+
+<details>
+  <summary>Hoe weet ik wat de y-positie is van de bovenkant van het scherm (play.screen.top)?</summary>
+
+  Met **play.screen.top** kun je weten wat de y-positie is van de bovenkant van het scherm.
+  Standaard staat dit op **300**. Het midden van het scherm heeft een y-positie van 0. Naar boven wordt de y-positie dus hoger.
+
+  ```python
+  import play 
+
+  print(play.screen.top)
+
+  play.start_program()
+ ```
+</details>
+
+<details>
+  <summary>Hoe weet ik wat de y-positie is van de onderkant van het scherm (play.screen.bottom)?</summary>
+
+  Met **play.screen.bottom** kun je weten wat de y-positie is van de onderkant van het scherm.
+  Standaard staat dit op **-300**. Het midden van het scherm heeft een y-positie van 0. Naar onder wordt de y-positie dus lager.
+
+  ```python
+  import play 
+
+  print(play.screen.bottom)
+
+  play.start_program()
+ ```
+</details>
+
+
 
 ## Database (JSON)
 
