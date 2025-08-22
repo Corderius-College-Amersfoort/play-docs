@@ -30,16 +30,16 @@ We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar
 ```python
 import play 
 
-cirkel = play.new_circle()
-cirkel.color = 'blue'
+mijn_cirkel = play.new_circle()
+mijn_cirkel.color = 'blue'
 
 play.start_program()
 ```
 
-In dit codefragment gebeurt erg veel:
+In dit codefragment gebeurt veel:
 - **play.new_circle()**: dit tekent de cirkel op het scherm
-- **cirkel = play.new_circle()**: dit tekent de cirkel EN zorgt ervoor dat de variabele **cirkel** verwijst naar onze cirkel
-- **cirkel.color = 'blue'**: dit wijzigt van onze cirkel alleen de kleur naar blauw
+- **mijn_cirkel = play.new_circle()**: dit tekent de cirkel EN zorgt ervoor dat de variabele **mijn_cirkel** verwijst naar onze cirkel
+- **mijn_cirkel.color = 'blue'**: dit wijzigt van onze cirkel alleen de kleur naar blauw
 
 Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 
@@ -53,7 +53,7 @@ Maak een nieuwe cirkel en pas deze aan:
 ```python
 import play 
 
-cirkel = play.new_circle()
+mijn_cirkel = play.new_circle()
 # JOUW CODE HIER
 
 play.start_program()
@@ -72,11 +72,11 @@ De attributen die je gaat veranderen zijn: **color**, **x**, **y** en **radius**
 ```python  
 import play 
 
-cirkel = play.new_circle()
-cirkel.color = 'blue'
-cirkel.x = 150
-cirkel.y = 200
-cirkel.radius = 200
+mijn_cirkel = play.new_circle()
+mijn_cirkel.color = 'blue'
+mijn_cirkel.x = 150
+mijn_cirkel.y = 200
+mijn_cirkel.radius = 200
 
 play.start_program()
 ```

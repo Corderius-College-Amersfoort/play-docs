@@ -54,7 +54,7 @@ import play
 play.new_box(width=800, height=600)
 
 # een eerste wit rechthoek
-play.new_box(color='white')
+
 # VOEG HIER JE CODE TOE
 
 play.start_program()
@@ -63,7 +63,7 @@ play.start_program()
 <details>
     <summary>Klik hier voor een tip!</summary>
 
-Gebruik drie keer **play.new_box** 
+Gebruik in taal vier keer **play.new_box** (één zwart rechthoek en drie witte rechthoeken)
 en het is nuttig om de attributen **y**, **width** en **height** te gebruiken.
 
 </details>
