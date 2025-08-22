@@ -7,22 +7,24 @@ hide_table_of_contents: true
 
 Tijd voor beweging!
 
+## Opdracht 2.1
+
 ```python 
-import play 
-
-cirkel = play.new_circle()
-cirkel.start_physics()
-
+import play  
+ 
+cirkel = play.new_circle() 
+cirkel.start_physics() 
+ 
 play.start_program()
 ```
 
-Wat gebeurt er als je dit codefragment draait?
-Als je het goed is, zie je de bal bewegen.
-Dit komt door de regel **cirkel.start_physics()**.
-**play** is nu aan het proberen om natuurkunde na te doen.
+a) Run dit codefragment
 
-## 2.1 Zwaartekracht uit en horizontaal bewegen
-Laten we de zwaartekracht eens uitzetten en de bal laten bewegen van links naar rechts.
+b) Wat gebeurt er als je dit codefragment draait?
+
+## 2.1 De uitleg
+De code hierboven zorgt ervoor dat de bal stuitert. Dit komt door de regel **cirkel.start_physics()** Physics is Engels voor natuurkunde. play is nu aan het proberen om natuurkunde na te doen. 
+Laten we de zwaartekracht (in het Engels **gravity**) eens uitzetten en de bal laten bewegen van links naar rechts.
 Dit kan met de volgende twee attributen:
 - **obeys_gravity**: True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht
 - **x_speed**: hoe hard wil je dat de bal beweegt op de horizontale as? 
@@ -37,6 +39,53 @@ play.start_program()
 ```
 Als het goed is, zie je bal heen en weer bewegen.
 
+## Opdracht 2.2
+Pas het voorbeeld van hiervoven aan voor het programmeren van deze opdrachten.
+
+a) Zet gravity uit laat de bal met snelheid 100 naar links bewegen.  
+
+<details>
+<summary>Klik hier voor een tip!</summary>
+Positief is naar rechts, negatief is naar links 
+</details>
+
+<details>
+<summary>Klik hier voor een oplossing!</summary>
+
+```python
+import play
+
+cirkel = play.new_circle()
+cirkel.start_physics(obeys_gravity=False, x_speed=-100)
+
+play.start_program()
+```
+
+</details>
+
+b) Laat de bal schuin naar de rechterboven bewegen (je mag zelf de snelheid bepalen)
+
+<details>
+<summary>Klik hier voor een tip!</summary>
+
+De attributen **x_speed** en **y_speed** zijn erg nuttig. 
+
+</details>
+
+<details>
+<summary>Klik hier voor een oplossing!</summary>
+
+```python
+import play
+
+cirkel = play.new_circle()
+cirkel.start_physics(obeys_gravity=False, x_speed=100, y_speed=100)
+
+play.start_program()
+```
+
+</details>
+
 ## 2.2 Wat kan ik allemaal aanpassen?
 Deze drie heb je net geleerd:
 - **x_speed**: hoe hard wil je dat de bal beweegt op de horizontale as? 
@@ -50,9 +99,9 @@ Deze vijf worden later nuttig, maar ze staan er nu al zodat je weet wat er mogel
 - **mass**: hoe 'zwaar' is je vorm? Dit kan snel ingewikkeld worden. Maar je kan je voorstellen dat een botsing anders is tussen twee vormen die even zwaar zijn in plaats van als vormen verschillend gewicht hebben.
 - **friction**: 0 --> geen frictie (energie blijft behouden).
 
-### Opdracht 2.1 Een zwevend platform
-Maak eens een platform zoals bij Super Mario.
-Het platform mag niet kunnen bewegen en de zwaartekracht heeft er geen invloed op.
+### Opdracht 2.3 Een zwevend platform
+Maak een platform zoals bij Super Mario.
+Deze mag door Mario niet bewogen worden, en het moet ook blijven zweven. 
 
 ```python
 import play
