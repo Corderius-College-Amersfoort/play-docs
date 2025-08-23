@@ -39,6 +39,27 @@ Happy birthday, dear Rachab.
 Happy birthday to you!
 ```
 
+
+Een vraag: hoeveel regels code komen erbij als je ook "Happy birthday" willen zingen voor de tweelingzus Rachel?
+
+<details>
+    <summary>Klik hier voor het antwoord</summary>
+
+Slechts één! De functie wordt maar één keer gedefinieerd. Daarna heb je iedere keer maar één regel code nodig om de functie aan te roepen.
+
+```python
+def happy_birthday(name):
+    print("Happy birthday to you!")
+    print("Happy birthday to you!")
+    print("Happy birthday, dear " + name + ".")
+    print("Happy birthday to you!")
+
+happy_birthday("Rachab")
+happy_birthday("Rachel")
+```
+
+</details>
+
 ## En een method?
 Wat we veel gebruiken in coderius-play is een functie, maar die is dan vastgeplakt aan bijvoorbeeld een vorm. Dit noemen we een methode:
 
@@ -51,4 +72,4 @@ cirkel.hide()
 play.start_program()
 ```
 
-In dit voorbeeld zit de methode **hide()** vast aan het **cirkel**-object. Wanneer we **cirkel.hide()** uitvoeren, weet Python dat de hide-methode specifiek op deze ene cirkel moet worden toegepast."
+In dit voorbeeld zit de methode **hide()** vast aan het **cirkel**-object. Wanneer we **cirkel.hide()** uitvoeren, weet Python dat de hide-methode specifiek op deze ene cirkel moet worden toegepast.

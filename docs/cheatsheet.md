@@ -145,7 +145,7 @@ play.start_program()
 </details>
 
 <details>
-  <summary>Hoe verander ik de fysica van een vorm? (start_physics)</summary>
+  <summary>Hoe verander ik de fysica-eigenschappen van een vorm? (start_physics)</summary>
 
 ```py
 import play 
