@@ -3,10 +3,9 @@ sidebar_position: 6
 ---
 
 # 5. Gebeurtenissen bij een vorm
-Zodra je aan de gang gaat met fysica, beweegt bijvoorbeeld een bal vanzelf.
-Die kan zomaar tegen een andere vorm aanbotsen en kaatst weer terug.
-Maar hoe weet je eigenlijk in je code dat deze terugkaatst?
-Hiervoor moeten we de code iets ingewikkelder maken!
+Bij de vorige opdrachten leerde je hoe je programma kan reageren op een gebeurtenis in het spel, zoals wanneer de gebruiker op een knop drukt. We kijken nu hoe je programma kan reageren op objecten in je spel en objecten die op elkaar kunnen reageren. Kijk maar eens naar dit voorbeeld.
+
+Als je fysica aanzet, bewegen figuren automatisch. Een bal kan dan tegen een andere vorm botsen en terugstuiteren. Maar hoe weet je code dat hij terugstuitert? Daarvoor gebruiken we **gebeurtenis bij een vorm** (zie [cheatsheet](cheatsheet.md))
 
 ```python
 import play
