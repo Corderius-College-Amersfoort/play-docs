@@ -689,15 +689,14 @@ play.start_program()
 ```python
 import play
 
-ball = play.new_circle(color='black')
-ball.start_physics(obeys_gravity=False, x_speed=10)
+bal = play.new_circle(color='black')
+bal.start_physics(obeys_gravity=False, x_speed=10)
 
 @play.when_mouse_clicked
 async def tijdelijk_sneller():
-    ball.physics.x_speed = 30
+    bal.physics.x_speed = 30
     await play.timer(seconds=1)
-	ball.physics.x_speed = 10
-	
+    bal.physics.x_speed = 10
 
 play.start_program()
 ```

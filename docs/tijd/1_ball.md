@@ -4,6 +4,12 @@ hide_table_of_contents: true
 ---
 
 # 6.1 Wachten met time.sleep
+Soms wil je een pauze in je spel. 99% van de mensen grijpt dan naar **time.sleep**.
+Het probleem is dat **time.sleep** het hele spel op pauze zet! Dat werkt dus niet. Op naar iets dat wel werkt!
+
+Je hebt nu twee opties:
+- je bent benieuwd waarom **time.sleep** niet werkt --> ga door met deze pagina
+- je wilt weten wat wel werkt --> ga naar de volgende pagina
 
 We beginnen met een bewegende bal.
 
@@ -24,14 +30,14 @@ Je meest logische gedachte is misschien om **time.sleep** te gebruiken:
 import play
 import time
 
-ball = play.new_circle(color='black')
-ball.start_physics(obeys_gravity=False, x_speed=10)
+bal = play.new_circle(color='black')
+bal.start_physics(obeys_gravity=False, x_speed=10)
 
 @play.when_mouse_clicked
 def tijdelijk_sneller():
-    ball.physics.x_speed = 1000
+    bal.physics.x_speed = 1000
     time.sleep(1)
-    ball.physics.x_speed = 10
+    bal.physics.x_speed = 10
 
 play.start_program()
 ```
@@ -43,9 +49,9 @@ Gaat de bal sneller bewegen? Wat gebeurt er eigenlijk?
 ```
 Wanneer de muis geklikt wordt:
 - **def tijdelijk_sneller():** voeren we deze functie uit
-- **ball.physics.x_speed = 1000** we geven de bal een hoge snelheid
+- **bal.physics.x_speed = 1000** we geven de bal een hoge snelheid
 - **time.sleep(1)** we wachten een seconde
-- **ball.physics.x_speed = 10** we geven de bal een lage snelheid
+- **bal.physics.x_speed = 10** we geven de bal een lage snelheid
 
 Het probleem is dat **time.sleep** het hele spel op pauze zet! Dat werkt dus niet. Op naar iets dat wel werkt!
 
