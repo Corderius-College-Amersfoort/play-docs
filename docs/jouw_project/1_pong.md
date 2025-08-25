@@ -14,7 +14,7 @@ Een tip is om **start_physics(obeys_gravity=False, x_speed=200, friction=0)** te
 
 ## De batjes
 Voor het batje gebruik je een rechthoek.
-Ook hier voeg je fysica aan toe met **start_physics(obeys_gravity=False, can_move=False. friction=0)**.
+Ook hier voeg je fysica aan toe met **start_physics(obeys_gravity=False, can_move=False, friction=0)**.
 Je maakt er twee, anders kunnen we niet tegen elkaar spelen.
 
 ## Batje bewegen
