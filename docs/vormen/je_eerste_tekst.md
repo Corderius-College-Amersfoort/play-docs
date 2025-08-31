@@ -25,7 +25,7 @@ play.new_text(words='hallo pythonista', font='arial', font_size=30)
 play.start_program()
 ```
 
-### Opdracht 1.4.1 Johan Cruijff
+### Opdracht 1.4.a Johan Cruijff
 
 Maak onderstaande afbeelding na.
 

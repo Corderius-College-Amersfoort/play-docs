@@ -43,7 +43,7 @@ In dit codefragment gebeurt veel:
 
 Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 
-### Opdracht 1.5.1: je aangepaste cirkel
+### Opdracht 1.5.1.a: je aangepaste cirkel
 Maak een nieuwe cirkel en pas deze aan:
 - Verander de kleur naar 'blue' 
 - Verander de x-positie naar 150 

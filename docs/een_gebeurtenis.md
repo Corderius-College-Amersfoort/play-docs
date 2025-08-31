@@ -35,7 +35,7 @@ Direct onder de gebeurtenis plaatsen we een functie **spatie_ingedrukt**.
 Deze functie wordt uitgevoerd zodra de gebeurtenis gebeurt, in dit geval het indrukken van de spatiebalk.
 
 
-## Opdracht 4.1 ook links en rechts
+## Opdracht 4.a ook links en rechts
 a) Voer het onderstaand code fragment uit. Wat gebeurt er als je op pijltje omhoog drukt? 
 
 ```python
@@ -119,7 +119,7 @@ play.start_program()
 ```
 </details>
 
-## Opdracht 4.2 Klikken
+## Opdracht 4.b Klikken
 Naast **when_key_pressed** bestaan er nog meer gebeurtenissen.
 Kijk maar eens in de [cheatsheet](cheatsheet.md).
 

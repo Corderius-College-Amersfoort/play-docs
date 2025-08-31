@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 Tijd voor beweging!
 
-## Opdracht 2.1
+## Opdracht 2.a
 
 ```python 
 import play  
@@ -40,7 +40,7 @@ play.start_program()
 ```
 Als het goed is, zie je bal heen en weer bewegen.
 
-## Opdracht 2.2
+## Opdracht 2.b
 Pas het voorbeeld van hiervoven aan voor het programmeren van deze opdrachten.
 
 a) Zet gravity uit laat de bal met snelheid 100 naar links bewegen.  

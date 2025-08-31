@@ -30,7 +30,7 @@ black
 We hebben dus opgevraagd dat **mijn_cirkel.color** de waarde **black** heeft.
 Naast **color** kun je alle attributen opvragen van een vorm, bijvoorbeeld **x**, **y**, etc.
 
-## Opdracht 1.6.1
+## Opdracht 1.6.a
 
 Bekijk het voorbeeld hieronder. 
 - maak een cirkel en zet die op x-positie 50 en y-positie -100

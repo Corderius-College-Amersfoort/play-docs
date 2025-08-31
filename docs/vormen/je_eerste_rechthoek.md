@@ -39,7 +39,7 @@ play.new_box(width=200, height=200)
 play.start_program()
 ```
 
-### Opdracht 1.3.1 een weg tekenen
+### Opdracht 1.3.1.a een weg tekenen
 
 We gaan deze afbeelding namaken met **play.new_box**
 ![weg](weg.png)
