@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 7.1 Pong
+# Pong
 Waarom niet? Een super bekend spel en deze library is uitermate geschikt voor het bouwen van pong.
 Laten we eens bekijken wat we nodig hebben? Bij elke stap geven we tips hoe je het kan aanpakken. 
 
@@ -21,7 +21,11 @@ Je maakt er twee, anders kunnen we niet tegen elkaar spelen.
 **@play.when_key_pressed** kun je gebruiken zodat je de batjes naar boven en beneden kan bewegen.
 
 ## Wanneer krijgt iemand een punt?
-We gaan nog twee dunne balken maken, precies aan de linkerkant van het scherm en precies aan de rechterkant van het scherm. Iemand krijgt dan een punt als de bal de muur heeft geraakt. Dit moet maar eenmalig gebeuren. Tip: bekijk [5. Gebeurtenissen bij een vorm](../vorm_gebeurtenissen.md) hoe je dit moet doen. 
+We gaan nog twee dunne balken maken, precies aan de linkerkant van het scherm en precies aan de rechterkant van het scherm. 
+Je maakt eigenlijk je eigen "lijnen" van je veld. Wanneer de bijl zo'n lijn raakt, heeft de andere speler een punt. 
+Dit is makkelijker te programmeren dan te kijken of de bal de zijkant van het scherm raakt!
+
+Iemand krijgt dan een punt als de bal de muur heeft geraakt. Dit moet maar eenmalig gebeuren. Tip: bekijk [5. Gebeurtenissen bij een vorm](../vorm_gebeurtenissen.md) hoe je dit moet doen. 
 
 ## Score & Reset
 Voor de score gebruik je een tekst, één voor de score van de linkerspeler en één voor de rechter.
@@ -46,7 +50,7 @@ Hieronder een voorbeeld:
 - Power-ups: Grotere paddle, langzamere tegenstander, multi-ball, “ghost” bal. 
 - Status bar met punten per speler 
 - Versnellen: per gemaakte punt de balsnelheid verhogen. 
-- Timer met speltijd totdat is afgelopen 
+- Timer met speltijd totdat het spel is afgelopen 
 
 
 

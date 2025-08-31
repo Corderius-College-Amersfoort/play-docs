@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 7.2 Klikspelletje
+# Klikspelletje
 Een compleet ander genre is dat de gebruiker moet klikken!
 
 ```python

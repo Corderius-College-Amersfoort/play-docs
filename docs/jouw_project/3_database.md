@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 7.2 Een database
+# Een database
 Gegevens opslaan op je computer is erg handig bij een spel.
 Je kan bijvoorbeeld de high score opslaan, maar ook settings van de gebruiker. Speelde deze het spel het laatste op *easy* of toch medium? Hierbij geven we je een paar voorbeelden.
 
