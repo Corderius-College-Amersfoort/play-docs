@@ -1,9 +1,9 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 hide_table_of_contents: true
 ---
 
-# 1.5 Je vorm aanpassen
+# 1.6 Je vorm aanpassen
 
 Tot nu toe hebben de vormen stilgestaan op je scherm.
 Op die manier wordt het erg lastig om een spel te programmeren.
@@ -23,7 +23,7 @@ play.start_program()
 Hoe kan ik de cirkel veranderen **nadat** deze gemaakt is?
 Oftewel, kan ik via code na **play.new_circle()** iets veranderen aan de cirkel?
 
-## 1.5.1 De variabele
+## 1.6.1 De variabele
 We hebben een **variabele** nodig die ons toegang geeft tot de cirkel. Kijk maar eens goed naar het onderstaande voorbeeld:
 
 
@@ -43,7 +43,7 @@ In dit codefragment gebeurt veel:
 
 Naast kleur kun je ook de x-positie, y-positie etc. aanpassen. Probeer het maar eens in de volgende opdracht.
 
-### Opdracht 1.5.1.a: je aangepaste cirkel
+### Opdracht 1.6.1.a: je aangepaste cirkel
 Maak een nieuwe cirkel en pas deze aan:
 - Verander de kleur naar 'blue' 
 - Verander de x-positie naar 150 

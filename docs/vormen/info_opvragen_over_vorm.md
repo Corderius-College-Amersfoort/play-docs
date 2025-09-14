@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
-# 1.6 Informatie opvragen over een vorm
+# 1.7 Informatie opvragen over een vorm
 
 Je gaat later in deze tutorial een spel programmeren. En dan gaat er heel vaak iets niet hoe jij het wil.
 Als je het probleem wilt oplossen (noemen wel ook wel **debuggen**), dan moet je vaak te weten komen waar een vorm staat, hoe hard deze beweegt, etc. Als je iets wilt weten over een vorm, bijvoorbeeld kleur, gebeurt dit bijna altijd via **VARIABELE.ATTRIBUUT**. 
@@ -30,7 +30,7 @@ black
 We hebben dus opgevraagd dat **mijn_cirkel.color** de waarde **black** heeft.
 Naast **color** kun je alle attributen opvragen van een vorm, bijvoorbeeld **x**, **y**, etc.
 
-## Opdracht 1.6.a
+## Opdracht 1.7.a
 
 Bekijk het voorbeeld hieronder. 
 - maak een cirkel en zet die op x-positie 50 en y-positie -100

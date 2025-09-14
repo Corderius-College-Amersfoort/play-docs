@@ -100,6 +100,29 @@ play.start_program()
 </details>
 
 <details>
+  <summary>Afbeelding (play.new_image)</summary>
+
+```python
+import play 
+
+play.new_image('VERVANG_DIT_DOOR_NAAM_VAN_AFBEELDING')
+
+play.start_program()
+```
+Je **moet** voor **play.new_image** kiezen uit:
+- **image**: dit is de naam van het bestand op jouw computer, bijvoorbeeld **cat.jpg** (als je je afbeelding zo genoemd hebt)
+
+Je **kunt** voor **play.new_image** kiezen uit:
+- **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
+- **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
+- **size**: de grootte van de afbeelding. De grootte staat standaard op 100. Een hoger getal dan 100 maakt de afbeelding groter en een lager getal maakt de afbeelding kleiner.
+**angle**: de hoek. Je kunt je afbeelding draaien door de **angle** te veranderen. Als je **angle** naar 180 verandert, staat de afbeelding op z'n kop.
+- **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
+
+
+</details>
+
+<details>
   <summary>Hoe weet ik precies de locatie van de rechterkant (right), linkerkant (left), bovenkant (top) en onderkant (bottom) van een vorm?</summary>
 
 Dat gaat via:
