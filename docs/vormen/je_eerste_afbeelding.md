@@ -25,11 +25,11 @@ play.start_program()
 
 Als het goed is, zou je de afbeelding op je scherm moeten zien.
 
-c) de afbeelding is een beetje groot. Kun je in de [cheatsheet](cheatsheet.md) ontdekken hoe we de afbeelding kleiner kunnen maken?
+c) De afbeelding is een beetje groot. Kun je in de [cheatsheet](../cheatsheet.md) ontdekken hoe we de afbeelding kleiner kunnen maken?
 
 <details>
     <summary>Klik hier voor een tip</summary>
-Wat welk gebruik je in het Engels voor grootte?
+Welk woord gebruik je in het Engels voor grootte?
 </details>
 
 <details>
@@ -54,12 +54,5 @@ Je **kunt** voor **play.new_image** kiezen uit:
 - **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
 - **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
 - **size**: de grootte van de afbeelding. De grootte staat standaard op 100. Een hoger getal dan 100 maakt de afbeelding groter en een lager getal maakt de afbeelding kleiner.
-**angle**: de hoek. Je kunt je afbeelding draaien door de **angle** te veranderen. Als je **angle** naar 180 verandert, staat de afbeelding op z'n kop.
+- **angle**: de hoek. Je kunt je afbeelding draaien door de **angle** te veranderen. Als je **angle** naar 180 verandert, staat de afbeelding op z'n kop.
 - **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
-
-
-
-
-
-
-

@@ -112,7 +112,7 @@ play.start_program()
 
 Zie je de cirkel in het midden staan?
 
-### Opdracht 1.2.2.b: de positie aanpassen
+### Opdracht 1.2.2.a: de positie aanpassen
 
 Waar zie je cirkel verschijnen bij:
 
@@ -216,20 +216,21 @@ De bal zou een klein stukje onder het midden moeten staan.
 
 
 ## 1.2.3 Wat kan ik aanpassen aan een cirkel?
-Hierbij de lijst van attributen voor een cirkel:
+Hieronder volgt een lijst van attributen voor een cirkel:
 - **color**: Kleur, staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleuropties er zijn.
 - **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
 - **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
+Hieronder volgt een lijst van attributen voor een cirkel:
 - **radius**: straal, staat standaard op 100. Hoe groter de waarde, hoe groter de cirkel.
 - **border_color**: kleur van de rand, staat standaard op  'light blue'. Let op, als de **border_width** 0 is, zie je de rand niet.
 - **border_width**: de breedte van de rand. Staat standaard op 0 (geen rand zichtbaar)
 - **transparency**: doorzichtigheid, 0 is onzichtbaar. 100 is volledig zichtbaar.
 
-### Opdracht 1.2.3.c De mooiste cirkel
+### Opdracht 1.2.3.a De mooiste cirkel
 
 a) Teken twee cirkels die elkaar niet mogen raken. De eerste cirkel is blauw en heeft geen rand. De tweede is rood en heeft een dunne groene rand. 
 
-Vanaf nu is het heel handig om te kijken in de [Cheatsheet](../cheatsheet.md). Als je in de cheatsheet klikt op **Cirkel (play.new_circle)**, dan zie je wat je kan veranderen aan een cirkel.
+Vanaf nu is het heel handig om te kijken in de Cheatsheet. Als je in de cheatsheet klikt op **Cirkel (play.new_circle)**, dan zie je wat je kunt veranderen aan een cirkel.
 
 ```python
 import play 

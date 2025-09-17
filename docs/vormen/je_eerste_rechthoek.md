@@ -18,7 +18,7 @@ play.start_program()
 Als het goed is, zie je een rechthoek op je scherm.
 
 ## 1.3.1 Wat kan ik allemaal aanpassen?
-Net zoals bij **play.new_circle** heeft het programma voor ons nu ook al de kleur en grootte bepaald. Je kunt dit zelf natuurlijk aanpassen!
+Net als bij **play.new_circle** worden de kleur en grootte standaard bepaald. Dit kun je zelf aanpassen.
 Dit zijn de attributen voor **play.new_box**:
 - **color**: Kleur, staat standaard op 'black'. [Op deze pagina](https://www.pygame.org/docs/ref/color_list.html) zie je welke kleuropties er zijn.
 - **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
@@ -63,7 +63,7 @@ play.start_program()
 <details>
     <summary>Klik hier voor een tip!</summary>
 
-Gebruik in taal vier keer **play.new_box** (één zwart rechthoek en drie witte rechthoeken)
+Gebruik in totaal vier keer **play.new_box** (één zwart rechthoek en drie witte rechthoeken)
 en het is nuttig om de attributen **y**, **width** en **height** te gebruiken.
 
 </details>
@@ -85,8 +85,3 @@ play.new_box(color='white', y=-200, width=50, height=100)
 play.start_program()
 ```
 </details>
-
-
-
-
-

@@ -4,12 +4,9 @@ sidebar_position: 8
 
 # 1.7 Informatie opvragen over een vorm
 
-Je gaat later in deze tutorial een spel programmeren. En dan gaat er heel vaak iets niet hoe jij het wil.
-Als je het probleem wilt oplossen (noemen wel ook wel **debuggen**), dan moet je vaak te weten komen waar een vorm staat, hoe hard deze beweegt, etc. Als je iets wilt weten over een vorm, bijvoorbeeld kleur, gebeurt dit bijna altijd via **VARIABELE.ATTRIBUUT**. 
+Wanneer je een spel programmeert, gaan dingen vaak niet zoals je verwacht. Om problemen op te lossen (dit noemen we **debuggen**), moet je informatie over je vormen kunnen opvragen, zoals hun positie of kleur. Dit doe je meestal via de `VARIABELE.ATTRIBUUT` notatie.
 
-In het voorbeeld hieronder is de:
-- VARIABELE **cirkel**
-- ATTRIBUUT **color**
+In het onderstaande voorbeeld is `mijn_cirkel` de variabele en `color` het attribuut.
 
 ```python
 import play 

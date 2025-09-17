@@ -4,18 +4,18 @@ hide_table_of_contents: true
 ---
 
 # 1.4 Je eerste tekst
-We missen nog één ding: een tekst. Het is toch wel fijn als onze tekeningen en spellen ook tekst kunnen hebben.
+Tekeningen en spellen worden duidelijker met tekst. Met **coderius-play** kun je eenvoudig tekst toevoegen.
+De werkwijze is vergelijkbaar met **play.new_circle** en **play.new_box**.
 
-Uiteraard is het systeem hetzelfde als bij **play.new_circle** en **play.new_box**.
-Je kunt voor **play.new_text** kiezen uit:
-- **words**: Woorden op het scherm, de woorden die op het scherm komen te staan
+Voor **play.new_text** kun je de volgende attributen gebruiken:
+- **words**: De tekst die op het scherm moet verschijnen.
 - **x**: x-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar links, groter dan 0 is naar rechts.
 - **y**: y-positie, staat standaard op 0 (het midden). Kleiner dan 0 is naar beneden, groter dan 0 is naar boven.
-- **font**: de font van de tekst. Kun je bijvoorbeeld aanpassen naar 'arial'.
-- **font_size**: de grootte van de font.
+- **font**: het lettertype van de tekst, bijvoorbeeld 'arial'.
+- **font_size**: de grootte van het lettertype.
 - **color**: de kleur van de tekst.
 
-Hierbij een voorbeeld:
+Hieronder zie je een voorbeeld:
 
 ```python
 import play
@@ -62,10 +62,3 @@ play.start_program()
 ```
 
 </details>
-
-
-
-
-
-
-

@@ -6,10 +6,10 @@ hide_table_of_contents: true
 # 1.6 Je vorm aanpassen
 
 Tot nu toe hebben de vormen stilgestaan op je scherm.
-Op die manier wordt het erg lastig om een spel te programmeren.
-We hebben beweging nodig! Hiervoor moeten we wel één heel belangrijk iets leren: vormen aanpassen nadat ze gemaakt zijn.
+Om een spel te kunnen programmeren, hebben we beweging nodig.
+Daarvoor moeten we leren hoe je een vorm kunt aanpassen *nadat* deze is gemaakt.
 
-Kijk heel kritisch naar het volgende voorbeeld:
+Kijk eens naar het volgende voorbeeld:
 
 
 ```python 
@@ -81,5 +81,3 @@ mijn_cirkel.radius = 200
 play.start_program()
 ```
 </details>
-
-
