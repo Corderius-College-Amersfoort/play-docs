@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-Welke random functies zijn er allemaal in Corderius play?
+Welke random functies zijn er allemaal in coderius-play?
 
 # Lijst
 

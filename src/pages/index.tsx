@@ -17,8 +17,8 @@ function HomepageHeader() {
                 <div className={styles.buttons}>
                     <Link
                         className="button button--secondary button--lg"
-                        to="/docs/category/installatie-corderius-play">
-                        Documentatie
+                        to="/docs/category/installatie-coderius-play">
+                        Klik hier om te beginnen!
                     </Link>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-Welke sprites zijn er allemaal in Corderius play?
+Welke sprites zijn er allemaal in coderius-play?
 
 # Lijst
 

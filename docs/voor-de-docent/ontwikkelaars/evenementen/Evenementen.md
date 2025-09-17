@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-Welke evenementen zijn er allemaal in Corderius play?
+Welke evenementen zijn er allemaal in coderius-play?
 
 Er zijn ook nog verschillende subcategorieën van evenementen. Deze zijn:
 * [Muis](./Muis.md)

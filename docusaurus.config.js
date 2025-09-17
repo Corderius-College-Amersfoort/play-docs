@@ -4,12 +4,12 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-const organizationName = "Corderius-College-Amersfoort";
+const organizationName = "coderius";
 const projectName = "play-docs";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "Corderius play documentatie",
+	title: "coderius-play",
 	tagline: "Leer nog beter Python door het maken van games",
 	url: `https://${organizationName}.github.io`,
 	baseUrl: `/`,
@@ -58,7 +58,7 @@ const config = {
 				items: [
 					{
 						type: "doc",
-						docId: "/category/installatie-corderius-play",
+						docId: "/category/installatie-coderius-play",
 						position: "left",
 						label: "Tutorial",
 					},
