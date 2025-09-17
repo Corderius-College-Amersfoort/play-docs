@@ -509,6 +509,12 @@ play.start_program()
 </details>
 
 <details>
+  <summary>Welke toetsen kun je gebruiken bij @play.when_key_pressed?</summary>
+
+  Op [deze site](https://www.pygame.org/docs/ref/key.html) kun je een lijst vinden van alle toetsen. Scrol naar beneden tot je bij de lijst bent. Het gaat om de kolom "Description".
+</details>
+
+<details>
   <summary>Bij het indrukken van de muis (@play.when_mouse_clicked)</summary>
 
 **when_mouse_clicked** gebruik je voor om een muisklik te detecteren.

@@ -4,9 +4,9 @@ hide_table_of_contents: true
 ---
 
 # 4. Gebeurtenissen
-Als ik spatie intyp, wil ik graag dat iets beweegt..... kan dat?
-In **play** kun je iets veranderen als de gebruiker iets doet. We noemen dit ook wel een gebeurtenis.
-Zeker!
+
+"Als ik op de spatiebalk druk, wil ik dat er iets beweegt. Kan dat?"
+Jazeker! Met **play** kun je reageren op acties van de gebruiker. Zo'n actie noemen we een **gebeurtenis**.
 
 ```python
 import play

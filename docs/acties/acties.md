@@ -4,7 +4,7 @@ hide_table_of_contents: true
 ---
 
 # 3.1 Acties
-Naast dat je "eigenschappen" zoals kleur, grootte, positie, etc. kunt veranderen, kun je ook acties uitvoeren op je vormen.
+Naast het aanpassen van eigenschappen zoals kleur, grootte en positie, kun je ook acties uitvoeren op je vormen.
 Een voorbeeld hiervan is **verbergen**.
 
 Kopieer eerst het volgende codefragment naar je editor en voer het uit.
@@ -66,6 +66,3 @@ play.start_program()
 De cirkel is wel te zien! We doen alleen wel iets geks.
 We laten eerst de cirkel verdwijnen met **cirkel.hide()** en daarna weer verschijnen met **cirkel.show()**.
 </details>
-
-
-

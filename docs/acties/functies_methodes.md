@@ -18,7 +18,7 @@ play.start_program()
 Oftewel, is **hide()** niet gewoon een functie? Het antwoord is: ja en nee.
 
 ## Voorbeeld van een Python functie:
-Het doel van een functie is om een plek te hebben waar we een aantal Python commando's bij elkaar hebben zodat we niet zelf elke keer dezelfde regels Python code moeten typen:
+Het doel van een functie is om een aantal Python-commando's te bundelen, zodat je niet elke keer dezelfde regels code hoeft te typen:
 
 ```python
 def happy_birthday(name):

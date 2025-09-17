@@ -5,11 +5,11 @@ hide_table_of_contents: true
 
 # 5. Gebeurtenissen bij een vorm
 
-Bij de vorige opdrachten leerde je hoe je programma kan reageren op een gebeurtenis in het spel, zoals wanneer de gebruiker op een knop drukt. We kijken nu hoe je programma kan reageren op objecten en objecten onderling.
+Je hebt al geleerd hoe je programma kan reageren op de gebruiker, bijvoorbeeld als die een toets indrukt. Maar wat als je wilt reageren op gebeurtenissen *tussen vormen*? Bijvoorbeeld, wat moet er gebeuren als twee objecten elkaar raken? Dat leer je hier!
 
-Tip: kijk voor informatie over dit onderwerp in de [cheatsheet](cheatsheet.md).
+Voor meer voorbeelden kun je altijd de [cheatsheet](cheatsheet.md) raadplegen.
 
-## Opdracht 5.a Stap voor stap naar een botsing
+## Opdracht 5.a: Reageren op een botsing
 
 a) de basis
 - Maak eerst zelf een blauwe bal, met als naam van de variabele `bal`. 
@@ -23,8 +23,6 @@ import play
 
 bal = play.new_circle(color="blue", radius=50)
 batje = play.new_box(x=300)
-
-play.start_program()
 ```
 
 </details>
@@ -93,5 +91,3 @@ Let op:
 - **batje** wijst hier naar de **variabele** `batje`. Deze variabele wijst naar het gemaakte batje.
 
 Als onze bal dus botst tegen ons batje en weer terugkaatst, vindt deze gebeurtenis plaats.
-
-

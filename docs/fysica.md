@@ -24,8 +24,8 @@ a) Run dit codefragment
 b) Wat gebeurt er als je dit codefragment draait?
 
 ## 2.1 De uitleg
-De code hierboven zorgt ervoor dat de bal stuitert. Dit komt door de regel **cirkel.start_physics()** Physics is Engels voor natuurkunde. play is nu aan het proberen om natuurkunde na te doen. 
-Laten we de zwaartekracht (in het Engels **gravity**) eens uitzetten en de bal laten bewegen van links naar rechts.
+De code hierboven zorgt ervoor dat de bal stuitert. Dit komt door de regel **cirkel.start_physics()**. 'Physics' is Engels voor natuurkunde en **play** probeert nu de natuurkunde na te doen. 
+Laten we de zwaartekracht (in het Engels **gravity**) uitzetten en de bal van links naar rechts laten bewegen.
 Dit kan met de volgende twee eigenschappen:
 - **obeys_gravity**: True --> zwaartekracht wordt nagedaan, False --> geen zwaartekracht
 - **x_speed**: hoe hard wil je dat de bal beweegt op de horizontale as? 
