@@ -3,11 +3,9 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-# 6.2 Tijdelijk sneller met async await?
+# 6.2 Wachten met `async` en `await`
 
-Ok, dat werkte niet. We moeten een manier hebben om alleen één functie te laten wachten
-terwijl de rest van het spel doorgaat.
-Laten we eens async await proberen:
+Ok, `time.sleep()` werkte niet. We hebben een manier nodig om een functie te laten wachten, terwijl de rest van het spel gewoon doorgaat. Hiervoor gebruiken we `async` en `await`.
 
 ```python 
 import play
@@ -20,7 +18,6 @@ async def tijdelijk_sneller():
     ball.physics.x_speed = 100
     await play.timer(seconds=1)
 	ball.physics.x_speed = 10
-	
 
 play.start_program()
 ```

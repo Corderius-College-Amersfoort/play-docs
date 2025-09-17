@@ -3,13 +3,10 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-# 6.1 Wachten met time.sleep
-Soms wil je een pauze in je spel. 99% van de mensen grijpt dan naar **time.sleep**.
-Het probleem is dat **time.sleep** het hele spel op pauze zet! Dat werkt dus niet. Op naar iets dat wel werkt!
+# 6.1 Wachten in je spel
+Soms wil je een pauze in je spel. Bijvoorbeeld om een object even te laten wachten voordat het weer verdergaat. Een veelgebruikte functie in Python is `time.sleep()`. Laten we eens kijken wat er gebeurt als we die in een `play`-programma gebruiken.
 
-Je hebt nu twee opties:
-- je bent benieuwd waarom **time.sleep** niet werkt --> ga door met deze pagina
-- je wilt weten wat wel werkt --> ga naar de volgende pagina
+Op deze pagina ontdek je waarom `time.sleep()` vaak niet het gewenste effect heeft. Wil je meteen de juiste oplossing zien? Ga dan direct naar de volgende pagina.
 
 We beginnen met een bewegende bal.
 
@@ -54,9 +51,3 @@ Wanneer de muis geklikt wordt:
 - **bal.physics.x_speed = 10** we geven de bal een lage snelheid
 
 Het probleem is dat **time.sleep** het hele spel op pauze zet! Dat werkt dus niet. Op naar iets dat wel werkt!
-
-
-
-
-
-

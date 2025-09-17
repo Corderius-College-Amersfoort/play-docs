@@ -3,41 +3,41 @@ sidebar_position: 1
 ---
 
 # Pong
-Waarom niet? Een super bekend spel en deze library is uitermate geschikt voor het bouwen van pong.
-Laten we eens bekijken wat we nodig hebben? Bij elke stap geven we tips hoe je het kan aanpakken. 
+Pong is een klassieker en een perfect project om met `coderius-play` te bouwen!
+Laten we eens bekijken wat je hiervoor nodig hebt. Bij elke stap geven we tips hoe je dit kunt aanpakken.
 
 Voor voorbeelden ga je uiteraard naar de [Cheatsheet](../cheatsheet.md).
 
 ## De bal
-Voor de bal gebruik je een cirkel die je gaat laten bewegen.
-Een tip is om **start_physics(obeys_gravity=False, x_speed=200, friction=0)** te gebruiken als start.
+Gebruik een cirkel voor de bal en laat deze bewegen.
+Een goede start is `bal.start_physics(obeys_gravity=False, x_speed=200)`.
 
 ## De batjes
-Voor het batje gebruik je een rechthoek.
-Ook hier voeg je fysica aan toe met **start_physics(obeys_gravity=False, can_move=False, friction=0)**.
-Je maakt er twee, anders kunnen we niet tegen elkaar spelen.
+Gebruik een rechthoek voor een batje. Voeg ook hier fysica aan toe, maar zorg dat het batje niet uit zichzelf beweegt: `batje.start_physics(obeys_gravity=False, can_move=False)`.
+Maak er twee, zodat je tegen elkaar kunt spelen.
 
 ## Batje bewegen
-**@play.when_key_pressed** kun je gebruiken zodat je de batjes naar boven en beneden kan bewegen.
+Gebruik `@play.when_key_pressed` om de batjes omhoog en omlaag te laten bewegen met de pijltjestoetsen.
 
-## Wanneer krijgt iemand een punt?
-We gaan nog twee dunne balken maken, precies aan de linkerkant van het scherm en precies aan de rechterkant van het scherm. 
-Je maakt eigenlijk je eigen "lijnen" van je veld. Wanneer de bijl zo'n lijn raakt, heeft de andere speler een punt. 
-Dit is makkelijker te programmeren dan te kijken of de bal de zijkant van het scherm raakt!
+## Wanneer scoort een speler een punt?
+Een slimme truc is om twee onzichtbare muren te maken: één helemaal links en één helemaal rechts. Dit worden de "doelen".
+Wanneer de bal zo'n muur raakt, heeft de andere speler een punt. Dit is makkelijker te programmeren dan controleren of de bal de rand van het scherm raakt!
 
-Iemand krijgt dan een punt als de bal de muur heeft geraakt. Dit moet maar eenmalig gebeuren. Tip: bekijk [5. Gebeurtenissen bij een vorm](../vorm_gebeurtenissen.md) hoe je dit moet doen. 
+Een speler krijgt een punt zodra de bal de muur van de tegenstander raakt. Deze gebeurtenis moet maar één keer per botsing een punt geven.
+Tip: bekijk `5. Gebeurtenissen bij een vorm` om te zien hoe je dit doet.
 
 ## Score & Reset
-Voor de score gebruik je een tekst, één voor de score van de linkerspeler en één voor de rechter.
-Vergeet niet **global** te gebruiken in je functie als je de score gaat aanpassen.
-ls de bal voorbij de linker- ofrechterrand? 
-- Punt voor tegenpartij
-- bal naar midden
-- beginsnelheid zetten
-- score-tekst bijwerken. 
+Voor de score gebruik je twee tekstobjecten: één voor de linkerspeler en één voor de rechter.
+Vergeet niet `global` te gebruiken in de functie waarin je de score aanpast.
 
-## Bal ook omhoog
-Naast x_speed bestaat er ook y_speed. Dus **start_physics(obeys_gravity=False, x_speed=60, y_speed=60)**.
+Als de bal een van de muren raakt, moet je een aantal dingen doen:
+- Geef de juiste speler een punt.
+- Reset de positie van de bal naar het midden.
+- Geef de bal weer een beginsnelheid.
+- Werk de scoretekst op het scherm bij.
+
+## De bal diagonaal laten bewegen
+Om het spel interessanter te maken, kun je de bal ook diagonaal laten bewegen. Naast `x_speed` bestaat er ook `y_speed`. Probeer bijvoorbeeld: `start_physics(obeys_gravity=False, x_speed=60, y_speed=60)`.
 
 Hieronder een voorbeeld:
 
@@ -45,18 +45,9 @@ Hieronder een voorbeeld:
 
 ## Mogelijke uitbreidingen
 - Wanneer heeft iemand gewonnen?
-- Kun je het batje de computer laten zijn?
+- Kun je een batje door de computer laten besturen?
 - Hoe maak je een startmenu?
-- Power-ups: Grotere paddle, langzamere tegenstander, multi-ball, “ghost” bal. 
-- Status bar met punten per speler 
-- Versnellen: per gemaakte punt de balsnelheid verhogen. 
-- Timer met speltijd totdat het spel is afgelopen 
-
-
-
-
-
-
-
-
-
+- Power-ups: een groter batje, een snellere bal, of een tijdelijke onzichtbare bal.
+- Een duidelijk scorebord.
+- Versnelling: verhoog de balsnelheid na elke keer dat een batje wordt geraakt.
+- Speltimer: voeg een timer toe die aftelt tot het einde van het spel.

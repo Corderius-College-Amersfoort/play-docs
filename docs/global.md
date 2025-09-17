@@ -2,11 +2,10 @@
 sidebar_position: 8
 ---
 
-# 7. global
-Hoe houd ik een score bij van bijvoorbeeld een spel?
-In onze omgeving is het handig om dan **global** te gebruiken.
+# 7. Een score bijhouden met `global`
+Hoe houd je een score bij in een spel? Als je een variabele, zoals `score`, wilt aanpassen *binnen* een functie, heb je het speciale sleutelwoord `global` nodig.
 
-## 7.1 een niet werkend voorbeeld :)
+## 7.1 Een veelgemaakte fout
 
 Kopieer onderstaande code naar je editor en voer de code uit:
 
@@ -24,7 +23,7 @@ def spatie_ingedrukt():
 play.start_program()
 ```
 
-Druk maar eens op spatie. Als het goed is verandert er niets en zie je het volgende:
+Druk maar eens op spatie. Als het goed is verandert er niets en zie je het volgende in je console:
 
 ```
 UnboundLocalError: local variable 'score' referenced before assignment
@@ -34,7 +33,7 @@ Dit betekent dat we niet de **rechten** hebben om de variabele **score** te wijz
 
 ## 7.2 een goed voorbeeld
 We gaan het statement **global** toevoegen.
-Als we het commondo **global VARIABLE** geven, dan hebben we wel de rechten om de variabele te wijzigen.
+Als we het commando **global VARIABLE** geven, dan hebben we wel de rechten om de variabele te wijzigen.
 
 ```python
 import play
@@ -50,4 +49,3 @@ def spatie_ingedrukt():
     
 play.start_program()
 ```      
-
