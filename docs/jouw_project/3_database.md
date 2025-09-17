@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Een database
 Gegevens opslaan op je computer is erg handig bij een spel.
-Je kan bijvoorbeeld de high score opslaan, maar ook settings van de gebruiker. Speelde deze het spel het laatste op *easy* of toch medium? Hierbij geven we je een paar voorbeelden.
+Je kunt bijvoorbeeld de high score opslaan, maar ook de instellingen van de gebruiker. Speelde de gebruiker het spel de laatste keer op *easy* of toch op *medium*? Hierbij geven we je een paar voorbeelden.
 
 ## High score
 Zoals in de [Cheatsheet](../cheatsheet.md) is uitgelegd, kun je een database gebruiken voor het opslaan van de high score van je spel. Hierbij een voorbeeld van hoe je dit zou kunnen doen:
@@ -98,11 +98,3 @@ def update_database():
 
 play.start_program()
 ```
-
-
-
-
-
-
-
-

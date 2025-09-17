@@ -472,7 +472,7 @@ play.start_program()
 <details>
   <summary>Bij het indrukken van een willekeurige toets (@play.when_any_key_pressed)</summary>
 
-  Met **@play.when_any_key_pressed** kun je een functie uitvoeren zodra welke toets dan ook op het toetsenbord wordt ingedrukt. Met **key** kun je dan weten welke toets ingedrukt wordt.
+  Met **@play.when_any_key_pressed** kun je een functie uitvoeren zodra een willekeurige toets op het toetsenbord wordt ingedrukt. Met de `key` parameter weet je welke toets is ingedrukt.
 
   ```python
   import play
@@ -492,7 +492,7 @@ play.start_program()
 <details>
   <summary>Bij het loslaten van een willekeurige toets (@play.when_any_key_released)</summary>
 
-  Met **@play.when_any_key_released** kun je een functie uitvoeren zodra welke toets dan ook op het toetsenbord wordt losgelaten. Met **key** kun je dan weten welke toets losgelaten wordt.
+  Met **@play.when_any_key_released** kun je een functie uitvoeren zodra een willekeurige toets op het toetsenbord wordt losgelaten. Met de `key` parameter weet je welke toets is losgelaten.
 
 ```python
 import play
@@ -517,7 +517,7 @@ play.start_program()
 <details>
   <summary>Bij het indrukken van de muis (@play.when_mouse_clicked)</summary>
 
-**when_mouse_clicked** gebruik je voor om een muisklik te detecteren.
+**when_mouse_clicked** gebruik je om een muisklik te detecteren.
 
 ```python
 import play
@@ -663,7 +663,7 @@ batje = play.new_box(x=200)
 tekst = play.new_text("bal raakt batje niet", y=200)
 
 @play.when_key_pressed('up')
-def pijlte_omhoog():
+def pijltje_omhoog():
     if bal.is_touching(batje):
         tekst.words = 'bal raakt batje'
     else:   
@@ -756,7 +756,7 @@ play.start_program()
 ## Global
 
 <details>
-  <summary>Hoe houd ik een score van mijn spel bij? (global)</summary>
+  <summary>Hoe houd ik de score van mijn spel bij? (global)</summary>
 
  ```python
  import play
