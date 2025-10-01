@@ -54,13 +54,13 @@ const config = {
 	/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "Play",
+				title: "Home",
 				items: [
 					{
 						type: "doc",
 						docId: "/category/installatie-coderius-play",
 						position: "left",
-						label: "Tutorial",
+						label: "Start met coderius-play",
 					},
 					{
 						href: `https://github.com/${organizationName}/${projectName}`,
