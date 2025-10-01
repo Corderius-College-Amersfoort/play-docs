@@ -889,3 +889,165 @@ play.start_program()
 
 ```
 </details>
+
+## SNES-controller
+
+<details>
+  <summary>Hoe weet ik of mijn computer de SNES-controller herkent?</summary>
+Je kunt onderstaande codefragment draaien om te kijken of je computer de controller herkent
+
+```python
+import play 
+
+for controller in play.controllers.get_all_controllers():
+    print(controller.get_instance_id(), controller.get_name())
+```
+In de console zie je vervolgens voor elke controller een `index` en een `naam`, bijvoorbeeld als er één SNES-controller verbonden is:
+
+```
+pygame-ce 2.5.5 (SDL 2.32.6, Python 3.12.10)
+0 usb gamepad
+```
+
+De `0` geeft de ax (axis) van de controller aan en `usb gamepad` geeft de naam van de controller aan. 
+</details>
+
+<details>
+  <summary>Bij het indrukken van een knop op de controller (play.controllers.when_button_pressed)</summary>
+
+
+Je gebruikt **play.controllers.when_button_pressed** om te checken of een knop op de controller ingedrukt wordt. Verder geef je twee argumenten mee:
+- `index` dit is de index van de controller, vaak is dit 0 als je maar één controller gebruikt
+- `button_id` het nummer dat bij een knop hoort
+
+Bijvoorbeeld:
+```python 
+import play 
+
+play.new_text('Welke kleur is knop 0?', y=200, font_size=40)
+play.new_text('Probeer de knoppen uit', y=100, font_size=40)
+
+@play.controllers.when_button_pressed(0, 0)
+def controller_0_knop_0():
+    play.new_text('Die knop dus')
+
+play.start_program()
+```
+
+Wanneer je dit codefragment draait, zou je de tekst `Die knop dus` moeten zien als je de knop indrukt die hoort bij knop 0.
+
+</details>
+
+<details>
+  <summary>Bij het loslaten van een knop op de controller (play.controllers.when_button_released)</summary>
+
+Je gebruikt **play.controllers.when_button_released** om te checken of een knop op de controller losgelaten wordt. Verder geef je twee argumenten mee:
+- `index` dit is de index van de controller, vaak is dit 0 als je maar één controller gebruikt
+- `button_id` het nummer dat bij een knop hoort
+
+```python 
+import play 
+
+play.new_text('Welke kleur is knop 0?', y=200, font_size=40)
+play.new_text('Probeer de knoppen uit', y=100, font_size=40)
+
+@play.controllers.when_button_released(0, 0)
+def controller_0_knop_0():
+    play.new_text('Die knop dus')
+
+play.start_program()
+```
+
+Wanneer je dit codefragment draait, zou je de tekst `Die knop dus` moeten zien als je de knop loslaat die hoort bij knop 0.
+
+</details>
+
+<details>
+  <summary>Bij het indrukken van een willekeurige knop op een controller (play.controllers.when_any_button_pressed)</summary>
+
+Je gebruikt **play.controllers.when_any_button_pressed** wanneer je een actie uit wilt voeren bij welke knop dan ook. Dit is ook een fijne manier om te weten welk nummer bij welke knop hoort.
+Je geeft alleen maar op welke controller je gebruikt (de `index`).
+
+Bijvoorbeeld:
+
+```python
+import play 
+
+play.new_text('Welk nummer hoort bij welke knop?', y=200, font_size=40)
+play.new_text('Probeer de knoppen uit', y=100, font_size=40)
+
+tekst = play.new_text("Nog geen knop ingedrukt")
+
+@play.controllers.when_any_button_pressed(0)
+def een_knop_ingedrukt(button_id):
+    tekst.words = f'De ingedrukte knop is: {button_id}'
+
+play.start_program()
+```
+
+</details>
+
+<details>
+  <summary>Bij het loslaten van een willekeurige knop op een controller (play.controllers.when_any_button_released)</summary>
+
+Je gebruikt **play.controllers.when_any_button_released** wanneer je een actie uit wilt voeren bij het loslaten van welke knop dan ook. Dit is ook een fijne manier om te weten welk nummer bij welke knop hoort.
+Je geeft alleen maar op welke controller je gebruikt (de `index`).
+
+Bijvoorbeeld:
+
+```python
+import play 
+
+play.new_text('Welk nummer hoort bij welke knop?', y=200, font_size=40)
+play.new_text('Probeer de knoppen uit', y=100, font_size=40)
+
+tekst = play.new_text("Nog geen knop losgetalen")
+
+@play.controllers.when_any_button_released(0)
+def een_knop_ingedrukt(button_id):
+    tekst.words = f'De losgelaten knop is: {button_id}'
+
+play.start_program()
+```
+
+</details>
+
+<details>
+  <summary>Bij het indrukken van een pijltje op een controller (play.controllers.when_axis_moved)</summary>
+
+Je gebruikt **play.controllers.when_axis_moved** om te detecteren of een pijltje is ingedrukt.
+
+Je geeft twee argumenten mee: `index` en `richting`
+
+`index` is het nummer dat bij de controller hoort (waarschijnlijk 0 als je er één gebruikt)
+
+`richting`:
+- 0: voor `horizontaal`, -1 is links en 1 is rechts
+- 1 voor `verticaal`, -1 is boven en 1 is beneden
+
+Bijvoorbeeld
+```python
+import play 
+
+play.new_text('Druk een pijltje in?', y=200, font_size=40)
+
+tekst = play.new_text("Nog geen pijltje ingedrukt")
+
+@play.controllers.when_axis_moved(0, 0)
+def links_rechts(index, value):
+    if value == 1:
+        tekst.words = "rechts ingedrukt"
+    if value == -1:
+        tekst.words = "links ingedrukt"
+
+@play.controllers.when_axis_moved(0, 1)
+def boven_beneden(index, value):
+    if value == 1:
+        tekst.words = "naar onder ingedrukt"
+    if value == -1:
+        tekst.words = "naar boven ingedrukt"
+
+play.start_program()
+```
+
+</details>
