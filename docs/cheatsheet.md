@@ -893,6 +893,14 @@ play.start_program()
 ## SNES-controller
 
 <details>
+  <summary>Wat is een SNES-controller?</summary>
+
+Een SNES-controller is een controller, die zo populair was dat deze zelfs [een eigen Wikipedia pagina](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) heeft.
+Als je via een zoekmachine zoekt op `SNES controller`, dan zul je zien dat deze op verschillende webshops nog te koop is.
+
+</details>
+
+<details>
   <summary>Hoe weet ik of mijn computer de SNES-controller herkent?</summary>
 Je kunt onderstaande codefragment draaien om te kijken of je computer de controller herkent
 
