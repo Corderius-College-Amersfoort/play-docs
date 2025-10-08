@@ -631,6 +631,7 @@ play.start_program()
 
 <details>
   <summary>Zodra twee vormen elkaar raken (@VARIABLE.when_touching)</summary>
+
 Je gebruikt @VARIABLE.when_touching als je wilt weten of twee vormen elkaar raken.
 
 ```python
@@ -902,6 +903,7 @@ Als je via een zoekmachine zoekt op `SNES controller`, dan zul je zien dat deze 
 
 <details>
   <summary>Hoe weet ik of mijn computer de SNES-controller herkent?</summary>
+  
 Je kunt onderstaande codefragment draaien om te kijken of je computer de controller herkent
 
 ```python
