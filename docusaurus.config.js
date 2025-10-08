@@ -69,6 +69,11 @@ const config = {
 						label: "Start met coderius-play",
 					},
 					{
+						href: '/docs/voor-de-docent/bug',
+						label: 'Bug gevonden?',
+						position: 'right',
+					},
+					{
 						href: `https://github.com/${organizationName}/${projectName}`,
 						label: "GitHub",
 						position: "right",
