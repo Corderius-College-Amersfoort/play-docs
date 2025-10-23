@@ -68,13 +68,18 @@ const config = {
 						position: "left",
 						label: "Start met coderius-play",
 					},
+          {
+						href: '/docs/cheatsheet',
+						label: 'Cheatsheet',
+						position: 'left',
+					},
 					{
 						href: '/docs/voor-de-docent/bug',
 						label: 'Bug gevonden?',
 						position: 'right',
 					},
 					{
-						href: `https://github.com/${organizationName}/${projectName}`,
+						href: `https://github.com/Corderius-College-Amersfoort/play/tree/major-refactors`,
 						label: "GitHub",
 						position: "right",
 					},
