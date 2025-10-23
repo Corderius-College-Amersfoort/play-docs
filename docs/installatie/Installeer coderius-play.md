@@ -4,15 +4,15 @@ hide_table_of_contents: true
 ---
 
 ## Installeer coderius-play
-Om de code uit dit project gebruiken moeten we nog iets extra's op onze computer installeren. Dit heet een package.
+Om de code uit dit project te kunnen gebruiken, moeten we nog iets extra's op onze computer installeren. Dit noemen we een 'package'.
 
-### Thonny gebruikers
+### Thonny-gebruikers
 Klik bovenaan op "Tools" en klik daarna op "Open system shell"
 
 ![Manage Tools](@site/static/img/thonny_system_shell.png)
 
-Er opent een zwart scherm waarin je kan typen.
-Kopieer hier het volgende commando in en druk op Enter.
+Er opent een zwart scherm waarin je kunt typen.
+Kopieer het volgende commando, plak het in dit scherm en druk op Enter.
 
 ```bash
 pip install git+https://github.com/Corderius-College-Amersfoort/play@major-refactors
@@ -36,7 +36,7 @@ Klik op de groene knop (`Run current script`) om de code te draaien
 
 ![run](@site/static/img/thonny_run_current_script.png)
 
-Als je er een zwarte bal verschijnt, dan is de installatie gelukt!
+Als er een zwarte bal verschijnt, dan is de installatie gelukt!
 
 ### VS code gebruikers
 
@@ -44,5 +44,3 @@ Mocht je bekend zijn met **pip**, dan kun je het package installeren via:
 ```bash
 pip install git+https://github.com/Corderius-College-Amersfoort/play@major-refactors
 ```
-
-

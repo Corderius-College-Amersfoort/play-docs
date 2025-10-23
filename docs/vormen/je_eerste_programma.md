@@ -5,6 +5,11 @@ hide_table_of_contents: true
 
 # 1.1 Je eerste programma schrijven en uitvoeren
 
+Het is tijd voor je eerste programma! Het maakt voor de uitleg uit welke editor je gebruikt:
+- Thonny: je mag naar de volgende pagina
+- VS code: de uitleg hieronder is voor jou
+
+## VS code gebruikers
 Laten we je eerste programma schrijven om te zien of de installatie is gelukt.
 Volg de stappen in de onderstaande video (bekijk op YouTube voor volledig scherm).
 
