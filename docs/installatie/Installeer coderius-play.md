@@ -42,5 +42,6 @@ Als er een zwarte bal verschijnt, dan is de installatie gelukt!
 
 Mocht je bekend zijn met **pip**, dan kun je het package installeren via:
 ```bash
+pip uninstall corderius-play
 pip install git+https://github.com/Corderius-College-Amersfoort/play@major-refactors
 ```
