@@ -17,7 +17,7 @@ const config = {
 	baseUrl: `/`,
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "throw",
-	// favicon: "img/favicon.ico",
+	favicon: "img/favicon.ico",
 	// GitHub Pages adds a trailing slash by default that I don't want
 	trailingSlash: false,
 
@@ -64,7 +64,7 @@ const config = {
 				items: [
 					{
 						type: "doc",
-						docId: "/category/installatie-coderius-play",
+						docId: "eerste-keer-python/IA",
 						position: "left",
 						label: "Start met coderius-play",
 					},
