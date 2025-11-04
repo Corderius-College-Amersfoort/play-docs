@@ -15,7 +15,7 @@ Het is belangrijk dat je eerst de projectmap opent. Dan weet VS Code automatisch
 
 ## Python installeren
 We gaan drie stappen uitvoeren. Voor elke stap verwijzen we naar het hoofdstuk in de Youtube video hieronder die het uitlegt.
-- de Programmeertaal Python (zie hoofdstuk `Install Python`)
+- de Programmeertaal Python (zie hoofdstuk `Install Python` en kies versie `3.10`)
 - Python extension (zie hoofdstuk `Install Python extension`)
 - Een virtual environment (zie hoofdstuk `Virtual Environment`)
 
@@ -25,15 +25,13 @@ We gaan drie stappen uitvoeren. Voor elke stap verwijzen we naar het hoofdstuk i
 - Klik bovenaan op `Terminal`
 - Klik op `New terminal`
 
-Onderaan Visual Studio Code opent een terminal. Kopieer hierin het volgende commando:
-```bash
-pip uninstall corderius-play
-```
-Mocht je `coderius-play` al een keer geïnstalleerd hebben, dan hebben we die nu verwijderd. Dan weten we zeker dat we zo de goede versie installeren.
+Onderaan Visual Studio Code opent een terminal. 
+
+
 Dan gaan we nu `coderius-play` installeren. Kopieer het volgende commando en plak het in de terminal:
 
 ```bash
-pip install git+https://github.com/Corderius-College-Amersfoort/play@major-refactors
+py -m pip install --upgrade coderius-play
 ```
 
 ## Testen of het gelukt is

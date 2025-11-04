@@ -12,20 +12,6 @@ Volg deze stappen om Thonny te installeren:
 - Installeer het programma en open het.
 
 
-## Stap 2: Verwijder een eventuele oude versie van coderius-play
-
-Klik bovenaan op `Tools" en klik daarna op "Manage packages"
-
-![Manage Tools](@site/static/img/screenshot_thonny_tools.png)
-
-Zoek naar `corderius-play`
-
-![coderius-play](@site/static/img/zoek_corderius_play.png)
-
-Als je `corderius-play` als zoekresultaat ziet verschijnen, klik er dan op en klik vervolgens op `Uninstall`.
-Je kunt gewoon door naar de volgende stap als je `corderius-play` niet op je computer had staan.
-
-
 ## Stap 3: coderius-play installeren
 
 Klik bovenaan op `Tools` en daarna op `Open system shell`
@@ -37,7 +23,7 @@ Kopieer het volgende commando in het zwarte scherm dat zich net geopend heeft:
 
 
 ```bash
-pip install git+https://github.com/Corderius-College-Amersfoort/play@major-refactors
+pip install --upgrade coderius-play
 ```
 
 Je gaat een hele lap tekst zien verschijnen. Dat is ok, want de software wordt nu geïnstalleerd.
