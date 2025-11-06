@@ -12,7 +12,7 @@ Volg deze stappen om Thonny te installeren:
 - Installeer het programma en open het.
 
 
-## Stap 3: coderius-play installeren
+## Stap 2: coderius-play installeren
 
 Klik bovenaan op `Tools` en daarna op `Open system shell`
 
